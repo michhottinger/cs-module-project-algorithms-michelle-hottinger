@@ -5,12 +5,16 @@ Returns: a List of integers
 def moving_zeroes(arr):
     # Your code here
     lst = list()
-    for i in arr:
-        if i == 0:
-            lst.append(i)
-            return arr.append(lst)
+    tracker = 0
+    i= 0
+    while tracker < len(arr):
+        tracker += 1 
+        if arr[i] == 0:
+            value = arr.pop(i)
+            arr.append(value)
         else:
-            return arr
+            i += 1
+    return arr
     
 
 
