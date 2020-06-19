@@ -4,7 +4,6 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
-    lst = list()
     tracker = 0
     i= 0
     while tracker < len(arr):
